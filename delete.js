@@ -15,7 +15,7 @@ const db = admin.firestore(); // creates a short to access the Firestore databas
 
 const restaurantsCol = db.collection('restaurants'); // creates
 
-// delete
+// delete extra lines
 restaurantsCol.doc('ZaHqrFqDxzyOe2fPUCzh').delete()
     .then(res => console.log('ZaHqrFqDxzyOe2fPUCzh'))
     .catch(err => console.log('ZaHqrFqDxzyOe2fPUCzh',err))

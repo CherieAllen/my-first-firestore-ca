@@ -23,7 +23,7 @@ const restaurants = {
 
 restaurantsCol.add(restaurants) // adding restaurants to our restaurants collection
 .then(doc => console.log ('Created restaurant', doc.id)) // Handle resolve
-.catch(err => console.error(err)) //Handle catch
+.catch(err => console.error(err)) //Handle catch / reject
 const restaurant2 = {
     name : 'Bolay',
     address: '7060 W Palmetto Park Rd, Boca Raton, FL 33433',
