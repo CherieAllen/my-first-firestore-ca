@@ -11,7 +11,7 @@ admin.initializeApp({ //connects to our firebase project
 
 const db = admin.firestore(); // creates a short to access the Firestore database
 
-const restaurantscol = db.collection('restaurants'); // creates a shortcut to access the restaurants collection
+const restaurantsCol = db.collection('restaurants'); // creates a shortcut to access the restaurants collection
 
 const restaurants = {
     name: 'Mister 01',
@@ -33,7 +33,7 @@ const restaurant2 = {
 
 async function addRestaurant(data){
    try{ 
-    const doc = await restaurantscol.add(data) // add restaurant to collection
+    const doc = await restaurantsCol.add(data) // add restaurant to collection
     console.log ('Created restaurant', doc.id) // Handle resolve
    } catch(err) {
        console.error(err) // Handle reject
